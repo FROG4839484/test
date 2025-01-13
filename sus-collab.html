@@ -2,49 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SUS Collaboration</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="S.U.S Collaboration Tools">
+    <title>SUS Collab</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="menu">
-            <img src="mascot-logo.png" alt="S.U.S AI Logo" class="logo">
-            <nav class="nav-menu">
+            <div class="logo-container">
+                <img src="mascot-logo.png" alt="S.U.S AI Logo" class="logo">
+            </div>
+            <nav>
                 <a href="index.html" class="menu-button">HOME</a>
                 <a href="is-it-sus.html" class="menu-button">IS IT SUS</a>
-                <a href="sus-collab.html" class="menu-button active">SUS COLLAB</a>
+                <a href="sus-collab.html" class="menu-button">SUS COLLAB</a>
                 <a href="https://discord.gg/Kk6nU79Z" class="menu-button">JOIN OUR COMMUNITY</a>
             </nav>
-            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <nav id="mobile-menu">
-        <a href="index.html">HOME</a>
-        <a href="is-it-sus.html">IS IT SUS</a>
-        <a href="sus-collab.html">SUS COLLAB</a>
-        <a href="https://discord.gg/Kk6nU79Z">JOIN OUR COMMUNITY</a>
-    </nav>
+    <!-- SUS Collab Hero Section -->
+    <section id="hero">
+        <h1 class="heading">SUS Collaboration Tools</h1>
+        <p class="subheading">Decentralized repository for verified blockchain libraries, SDKs, and AI-enhanced modules.</p>
+        <p class="subheading">Features cryptographically signed resources, ZKP-based integrity checks, AI-driven dependency resolution, and dynamic pricing via AMM.</p>
+    </section>
 
-    <!-- Collaboration Section -->
-    <section id="collab-tools">
-        <h1>Collaboration Tools</h1>
-        <p>Coming Soon...</p>
+    <!-- Collaboration Tools Section -->
+    <section id="tools" class="section tools-section">
+        <h2 class="heading">Collaboration Tools</h2>
+        <div class="tools-box-container">
+            <div class="tool-box">
+                <h3 class="subheading">API Integration</h3>
+                <p>Secure, cryptographically verified APIs for blockchain and dApp development.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">AI Collaboration</h3>
+                <p>Adaptive AI agents designed for modular blockchain tasks.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">Smart Contract Deployment</h3>
+                <p>Tools for secure deployment and validation of smart contracts.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">Custom DApps</h3>
+                <p>Prebuilt modules for developing scalable decentralized applications.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">AI Support Library</h3>
+                <p>Extensive AI-curated resources for blockchain developers.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">Token Management</h3>
+                <p>Manage token creation, freezing, and analytics with streamlined tools.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <img src="mascot-logo.png" alt="S.U.S AI Logo" class="footer-logo">
-        <div class="social-icons">
-            <a href="#"><img src="x.svg" alt="Twitter"></a>
-            <a href="#"><img src="telegram.svg" alt="Telegram"></a>
+        <div class="footer-content">
+            <img src="mascot-logo.png" alt="S.U.S AI Logo" class="footer-logo">
+            <div class="social-icons">
+                <a href="#"><img src="x.svg" alt="X Logo"></a>
+                <a href="#"><img src="telegram.svg" alt="Telegram Logo"></a>
+            </div>
         </div>
         <p>&copy; 2025 - S.U.S AI LTD</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
