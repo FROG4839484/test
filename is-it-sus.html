@@ -2,49 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analyze token security with S.U.S AI">
     <title>Is It SUS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="menu">
-            <img src="mascot-logo.png" alt="S.U.S AI Logo" class="logo">
-            <nav class="nav-menu">
+            <div class="logo-container">
+                <img src="mascot-logo.png" alt="S.U.S AI Logo" class="logo">
+            </div>
+            <nav>
                 <a href="index.html" class="menu-button">HOME</a>
-                <a href="is-it-sus.html" class="menu-button active">IS IT SUS</a>
+                <a href="is-it-sus.html" class="menu-button">IS IT SUS</a>
                 <a href="sus-collab.html" class="menu-button">SUS COLLAB</a>
                 <a href="https://discord.gg/Kk6nU79Z" class="menu-button">JOIN OUR COMMUNITY</a>
             </nav>
-            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         </div>
     </header>
-
-    <!-- Mobile Menu -->
-    <nav id="mobile-menu">
-        <a href="index.html">HOME</a>
-        <a href="is-it-sus.html">IS IT SUS</a>
-        <a href="sus-collab.html">SUS COLLAB</a>
-        <a href="https://discord.gg/Kk6nU79Z">JOIN OUR COMMUNITY</a>
-    </nav>
-
-    <!-- Content -->
-    <section id="sus-analysis">
-        <h1>Analyze Tokens</h1>
-        <p>Coming Soon...</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <img src="mascot-logo.png" alt="S.U.S AI Logo" class="footer-logo">
-        <div class="social-icons">
-            <a href="#"><img src="x.svg" alt="Twitter"></a>
-            <a href="#"><img src="telegram.svg" alt="Telegram"></a>
+    <section id="hero">
+        <h1 class="heading">Analyze Token Security</h1>
+        <h2 class="subheading">Enter Token Address / for menu</h2>
+        <div class="input-container">
+            <input id="crypto-input" type="text" placeholder="Coming Soon... / for menu">
+            <ul id="dropdown-menu">
+                <li>/AI Analysis</li>
+                <li>/Holders</li>
+                <li>/Snipers</li>
+                <li>/Bots</li>
+                <li>/Socials</li>
+                <li>/Dev</li>
+                <li>/Token Info</li>
+            </ul>
         </div>
-        <p>&copy; 2025 - S.U.S AI LTD</p>
-    </footer>
-
-    <script src="script.js"></script>
+    </section>
 </body>
 </html>
