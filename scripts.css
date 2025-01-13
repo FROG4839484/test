@@ -1,0 +1,39 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: black;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.hamburger {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    #mobile-menu {
+        display: flex;
+        flex-direction: column;
+    }
+}
