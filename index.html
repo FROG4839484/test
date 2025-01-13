@@ -2,66 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>S.U.S AI - Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="S.U.S AI - Secure Utility Systems">
+    <title>S.U.S AI</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="menu">
-            <img src="mascot-logo.png" alt="S.U.S AI Logo" class="logo">
-            <nav class="nav-menu">
-                <a href="index.html" class="menu-button active">HOME</a>
+            <div class="logo-container">
+                <img src="mascot-logo.png" alt="S.U.S AI Logo" class="logo">
+            </div>
+            <nav>
+                <a href="https://discord.gg/Kk6nU79Z" class="menu-button">JOIN OUR COMMUNITY</a>
                 <a href="is-it-sus.html" class="menu-button">IS IT SUS</a>
                 <a href="sus-collab.html" class="menu-button">SUS COLLAB</a>
-                <a href="https://discord.gg/Kk6nU79Z" class="menu-button">JOIN OUR COMMUNITY</a>
             </nav>
-            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         </div>
     </header>
-
-    <!-- Mobile Menu -->
-    <nav id="mobile-menu">
-        <a href="index.html">HOME</a>
-        <a href="is-it-sus.html">IS IT SUS</a>
-        <a href="sus-collab.html">SUS COLLAB</a>
-        <a href="https://discord.gg/Kk6nU79Z">JOIN OUR COMMUNITY</a>
-    </nav>
 
     <!-- Hero Section -->
     <section id="hero">
         <h1 class="heading">S.U.S AI</h1>
         <h2 class="subheading">Secure Utility Systems</h2>
-        <p>Coming soon... / For menu</p>
+        <div class="input-container">
+            <input id="crypto-input" type="text" placeholder="coming soon... / for menu" />
+            <ul id="dropdown-menu">
+                <li>/AI Analysis</li>
+                <li>/Holders</li>
+                <li>/Snipers</li>
+                <li>/Bots</li>
+                <li>/Socials</li>
+                <li>/Dev</li>
+                <li>/Token Info</li>
+            </ul>
+        </div>
         <button class="cta-button">Is It SUS</button>
     </section>
 
-    <!-- Tools Section -->
-    <section id="tools">
+    <!-- Alternating Layout Sections -->
+    <section id="analyze" class="section">
+        <div class="content">
+            <div class="text-content">
+                <h2 class="heading">Analyze Token Security</h2>
+                <p>SUS analyzes your tokens or manually checks for manipulated contracts, sniper wallets, bundling, and holders.</p>
+            </div>
+            <img src="mascot-tech.png" alt="Token Analysis Mascot" class="section-image">
+        </div>
+    </section>
+
+    <section id="tools" class="section">
+        <div class="content">
+            <img src="Mascot-computer.png" alt="Developer Tools Mascot" class="section-image">
+            <div class="text-content">
+                <h2 class="heading">Developer Tools</h2>
+                <p>Collaborate, access verified APIs, and build modular AI agents tailored to blockchain tasks, dApps, and wallets.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- "Our Tools" Section -->
+    <section id="features" class="section tools-section">
         <h2 class="heading">Our Tools</h2>
         <div class="tools-box-container">
             <div class="tool-box">
-                <h3>Tool 1</h3>
-                <p>Streamline development with modular tools.</p>
+                <h3 class="subheading">APIs & Libraries</h3>
+                <p>Access curated and verified APIs for blockchain projects.</p>
             </div>
             <div class="tool-box">
-                <h3>Tool 2</h3>
-                <p>Optimize blockchain utilities securely.</p>
+                <h3 class="subheading">AI Coding Challenges</h3>
+                <p>Gamify blockchain coding skills with AI-generated challenges.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">Community Contributions</h3>
+                <p>Upload verified tools and earn project tokens for contributions.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">Token Management</h3>
+                <p>Securely manage token creation, freezing, and analytics.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">DApp Creation</h3>
+                <p>Explore customizable tools for decentralized applications.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">AI Support Library</h3>
+                <p>Access an AI-curated library of developer tools.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">Contract Security</h3>
+                <p>Analyze and verify smart contracts for security.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">Modular AI Agents</h3>
+                <p>Collaborate with modular AI agents for blockchain tasks.</p>
+            </div>
+            <div class="tool-box">
+                <h3 class="subheading">Advanced Token Analysis</h3>
+                <p>Use AI tools to ensure your tokens are secure.</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <img src="mascot-logo.png" alt="S.U.S AI Logo" class="footer-logo">
-        <div class="social-icons">
-            <a href="#"><img src="x.svg" alt="Twitter"></a>
-            <a href="#"><img src="telegram.svg" alt="Telegram"></a>
+        <div class="footer-content">
+            <img src="mascot-logo.png" alt="S.U.S AI Logo" class="footer-logo">
+            <div class="social-icons">
+                <a href="#" id="twitter-icon"><img src="x.svg" alt="Twitter Logo"></a>
+                <a href="#" id="telegram-icon"><img src="telegram.svg" alt="Telegram Logo"></a>
+            </div>
         </div>
         <p>&copy; 2025 - S.U.S AI LTD</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
